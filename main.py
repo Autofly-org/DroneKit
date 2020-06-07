@@ -19,7 +19,7 @@ def mode_callback(self,attr,msg):
 
 try:
     while True:
-     #   vehicle.mode
+        # vehicle.mode
         # getting system status
         # action = input("1:Change Mode \n 2:Incomming")
         # if(int(action) == 1):
@@ -35,12 +35,14 @@ try:
         # print("vehicle attitude: {0}".format(vehicle.attitude)) 
 
         # getting the battery
-        print("Battery: {0}".format(vehicle.battery))
+        print("home location: {0}".format(vehicle.location.local_frame))
+        vehicle.
+        
        # print("hello".format(vehicle._voltage))
 
        # vehicle.add_attribute_listener('mode',mode_callback)
      
-        time.sleep(10)
+        time.sleep(4)
 except KeyboardInterrupt:
     print("exited the program")
     vehicle.close()
